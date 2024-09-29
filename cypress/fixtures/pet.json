@@ -1,0 +1,19 @@
+
+    {
+        "id": 5 ,
+        "category": {
+            "id": 1,
+            "name": "dog"
+        },
+        "name": "browny",
+        "photoUrls": [
+            ""
+        ],
+        "tags": [
+            {
+            "id": 1,
+            "name": "mammal"
+            }
+        ],
+        "status": "available"
+    }
