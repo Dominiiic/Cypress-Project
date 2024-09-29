@@ -118,7 +118,7 @@ describe("Retrieves single order", () => {
 });
 
 
-describe("Deletes single order", () => {
+describe("Delete single order", () => {
     it("Should successfully delete the order with the given id", () => {
         cy.apiDelete("/store/order/" + orderIds[0])
             .then((response) => {
