@@ -8,21 +8,23 @@ pipeline {
     }
 
     stages {
-        stage("Install Dependencies") {
+        stage("Building"){
+            steps{
+                echo "Building the application"
+            }
+        }
+        stage("Testing") {
             steps {
                 ansiColor('xterm') {
                     bat 'npm install'
+                    bat 'npx cypress install'
+                    bat 'npm run cy:cloud'
                 }
             }
         }
-        stage("Install Cypress") {
-            steps {
-                bat 'npx cypress install'
-            }
-        }
-        stage("Run Cypress Tests") {
-            steps {
-                bat 'npm run cy:cloud'
+        stage("Deploying"){
+            steps{
+                echo "Deploying the application"
             }
         }
     }
