@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:cloud": "npx cypress run "
+    "cy:cloud": "npx cypress run ",
+    "cypress-dashboard": "npx cypress run --record --key=f0a42090-4ebc-4f05-8afa-102ecf0f0dd9"
   },
   "author": "",
   "license": "ISC",
