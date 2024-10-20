@@ -10,7 +10,9 @@ pipeline {
     stages {
         stage("Install Dependencies") {
             steps {
-                bat 'npm install'
+                ansiColor('xterm') {
+                    bat 'npm install'
+                }
             }
         }
         stage("Install Cypress") {
